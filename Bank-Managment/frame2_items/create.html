@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        form{
+            text-align: left;
+            font-size: 20px;
+            margin: 1% auto;
+            width: 35%;
+            border: 2px black solid;
+            padding: 2%;
+            border-radius: 9px;
+            border-color: rgb(209, 219, 227);
+        }
+        input[type=text]{
+            width: 100%;
+            border: none;
+            font-size: 20px;
+        }
+
+        input[type=password]:focus {
+            outline: none;
+        }
+        input[type=password]{
+            width: 100%;
+            border: none;
+            font-size: 20px;
+        }
+
+        input[type=text]:focus {
+            outline: none;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .next{
+        color: white;
+        }
+        .fieldp{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .google{
+        letter-spacing: -4px;
+        font-weight: normal;
+        }
+        .head1 {
+            font-weight: normal;
+        }
+        fieldset{
+            padding: 0% 5%;
+            padding-bottom: 2%;
+            border-radius: 7px;
+            border-color: blue;
+        }
+        legend{
+            padding-left: 10px;
+            padding-right: 10px;
+            color: blue;
+        }
+
+        .flex-contianer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10% auto;
+        }
+        
+        .left-btn {
+            align-items: left;
+            width: 200px;
+            font-size: 20px;
+            color: blue;
+            background-color: transparent;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 7px;
+        }
+        .left-btn:hover{
+            background-color: rgb(209, 230, 246);
+        }
+        
+        .right-btn {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-right: 1%;
+            background-color: rgb(59, 59, 254);
+            color: aliceblue;
+            border: none;
+            border-radius: 7px;
+        }
+        .right-btn:hover{
+            background-color: rgb(13, 22, 146);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+            <label for=""><h2 class="head1">Create your Account</h2></label><br>
+            <div class="fieldp">
+                <div class="field1">
+                    <fieldset>
+                        <legend align="left">First name</legend>
+                        <input type="text" placeholder="First name">
+                    </fieldset>
+                </div>
+                <div class="field2">
+                    <fieldset>
+                        <legend align="left">Last name</legend>
+                        <input type="text" placeholder="Last name">
+                    </fieldset>
+                </div>
+            </div>
+            <br>
+            <div class="email">
+                <fieldset>
+                    <legend align="left">Email</legend>
+                    <input type="text" placeholder="username@gmail.com">
+                </fieldset>
+            </div>
+            <span>use 8 or more characters</span>
+            <br>
+            <br>
+            <div class="fieldp">
+                <div class="field1">
+                    <fieldset>
+                        <legend align="left">Password</legend>
+                        <input type="password" placeholder="Password">
+                    </fieldset>
+                </div>
+                <div class="field2">
+                    <fieldset>
+                        <legend align="left">Confirm</legend>
+                        <input type="password" placeholder="Confirm">
+                    </fieldset>
+                </div>
+            </div>
+            <span>use 8 or more characters</span>
+            
+            <br><br>
+            <div class="email">
+                <fieldset>
+                    <legend align="left">Phone</legend>
+                    <input type="text" placeholder="+91 xxxxx xxxxx">
+                </fieldset>
+            </div>
+            <span>Standard rates apply</span>
+            <br>
+            <br>
+            <div class = "flex-contianer">
+                <button class="left-btn" onclick="create()"><a href="">Create</a> </button>
+                <button class = "right-btn"><a href="" class="next">Reset</a></button>
+            </div>
+            
+        </form>
+
+    </section>
+    <script>
+        function create(){
+            alert("Your Account has been created successfully!")
+        }
+    </script>
+</body>
+</html>
